@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Homepage</title>
+    <title>Cyber Tech Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <input type="text" id="search-bar" placeholder="Search...">
-        <button id="settings-btn">...</button>
+        <div class="search-bar">
+            <input type="search" id="search-input" placeholder="Search on Google...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="menu">
+            <span class="dots" id="menu-btn">...</span>
+            <ul id="menu-list">
+                <li><a href="#" id="change-bg-btn">Change Background Picture</a></li>
+                <li><a href="#" id="add-bookmark-btn">Add Bookmark</a></li>
+                <li><a href="#" id="change-color-btn">Change Color</a>
+                    <ul id="color-options">
+                        <li><a href="#" data-color="#3498db">Sky Blue</a></li>
+                        <li><a href="#" data-color="#2ecc71">Teal Blue</a></li>
+                        <li><a href="#" data-color="#2980b9">Navy Blue</a></li>
+                        <li><a href="#" data-color="#1abc9c">Light Blue</a></li>
+                        <li><a href="#" data-color="#9b59b6">Purple Blue</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
-        <div id="bookmarks-container">
-            <!-- Bookmark bubbles will be dynamically added here -->
+        <div class="bookmark-grid">
+            <div class="bookmark" data-url="https://www.youtube.com/">
+                <p>YouTube</p>
+            </div>
+            <div class="bookmark" data-url="https://www.facebook.com/">
+                <p>Facebook</p>
+            </div>
+            <div class="bookmark" data-url="https://www.twitter.com/">
+                <p>Twitter</p>
+            </div>
         </div>
-        <button id="add-bookmark-btn">+</button>
     </main>
-    <script src="scripts.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>

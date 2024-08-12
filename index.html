@@ -3,45 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Tech Dashboard</title>
+    <title>Custom Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="search-bar">
-            <input type="search" id="search-input" placeholder="Search on Google...">
-            <button id="search-btn">Search</button>
-        </div>
-        <div class="menu">
-            <span class="dots" id="menu-btn">...</span>
-            <ul id="menu-list">
-                <li><a href="#" id="change-bg-btn">Change Background Picture</a></li>
-                <li><a href="#" id="add-bookmark-btn">Add Bookmark</a></li>
-                <li><a href="#" id="change-color-btn">Change Color</a>
-                    <ul id="color-options">
-                        <li><a href="#" data-color="#3498db">Sky Blue</a></li>
-                        <li><a href="#" data-color="#2ecc71">Teal Blue</a></li>
-                        <li><a href="#" data-color="#2980b9">Navy Blue</a></li>
-                        <li><a href="#" data-color="#1abc9c">Light Blue</a></li>
-                        <li><a href="#" data-color="#9b59b6">Purple Blue</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <input type="text" id="search-bar" placeholder="Search...">
+        <div id="settings">
+            <span id="settings-btn">...</span>
+            <div id="settings-menu">
+                <ul>
+                    <li id="change-theme">Change Theme</li>
+                    <li id="notifications">Notifications</li>
+                    <li id="change-background">Change Background</li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
-        <div class="bookmark-grid">
-            <div class="bookmark" data-url="https://www.youtube.com/">
-                <p>YouTube</p>
-            </div>
-            <div class="bookmark" data-url="https://www.facebook.com/">
-                <p>Facebook</p>
-            </div>
-            <div class="bookmark" data-url="https://www.twitter.com/">
-                <p>Twitter</p>
-            </div>
+        <div id="bookmarks-container">
+            <div class="bookmark">Example 1</div>
+            <div class="bookmark">Example 2</div>
+            <div class="bookmark">Example 3</div>
         </div>
+        <div id="add-bookmark-btn">+</div>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
